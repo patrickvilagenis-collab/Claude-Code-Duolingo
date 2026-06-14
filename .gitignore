@@ -1,0 +1,21 @@
+# Datos locales y secretos (NUNCA subir)
+data/
+config.json
+token_cache.bin
+
+# Entornos y build
+.venv/
+venv/
+build/
+dist/
+*.spec
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Sistema
+.DS_Store
+Thumbs.db

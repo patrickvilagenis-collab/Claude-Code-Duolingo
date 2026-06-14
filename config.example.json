@@ -1,0 +1,10 @@
+{
+  "azure_client_id": "PEGA-AQUI-EL-CLIENT-ID-DE-AZURE",
+  "azure_tenant_id": "common",
+  "anthropic_api_key": "sk-ant-...",
+  "model": "claude-opus-4-8",
+  "language": "español",
+  "mail_fetch_count": 25,
+  "calendar_days_ahead": 7,
+  "appearance": "System"
+}
