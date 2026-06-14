@@ -1,0 +1,19 @@
+{
+  "id": "l3-u7-1",
+  "level": 3,
+  "unit": "3.7",
+  "title": "Proyecto final",
+  "estMinutes": 15,
+  "xp": 60,
+  "concept": {
+    "md": "Es hora de juntarlo todo. El **proyecto final** consiste en construir un mini-ecosistema end-to-end con Claude Code que combine al menos:\n\n- Un **servidor MCP** conectado (p. ej. GitHub).\n- Una **skill** o un **slash command** propio.\n- Un **hook** que automatice algo (p. ej. `SessionStart`).\n- Un **flujo de PR** con CI que valide el proyecto.\n\nSe evalúa por una **rúbrica**: que cada pieza funcione y encaje en un flujo coherente."
+  },
+  "example": {
+    "md": "Idea: un repo con un bot de changelog. Skill que genera el changelog, slash command `/release`, hook que valida formato al iniciar, y CI que comprueba todo en cada PR."
+  },
+  "challenge": {
+    "type": "free-text",
+    "prompt": "Describe tu proyecto final: ¿qué construirías y cómo encajan un MCP, una skill o comando, un hook y un flujo de PR/CI?",
+    "why": "Una buena respuesta conecta las piezas en un **flujo coherente**: el MCP aporta una capacidad externa, la skill/comando encapsula una tarea repetible, el hook automatiza algo en cada sesión y el PR+CI garantiza calidad antes de fusionar. Lo importante no es la complejidad, sino que las partes colaboren con un propósito claro."
+  }
+}

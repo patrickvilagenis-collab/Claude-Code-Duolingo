@@ -1,0 +1,56 @@
+{
+  "version": 2,
+  "levels": [
+    {
+      "level": 1,
+      "title": "Básico — ¿Qué es Claude?",
+      "units": [
+        {
+          "unit": "1.1",
+          "title": "Fundamentos: Claude y los prompts",
+          "lessons": ["l1-u1-1", "l1-u1-2"],
+          "checkpoint": { "passScore": 80 }
+        },
+        {
+          "unit": "1.2",
+          "title": "Claude en la práctica",
+          "lessons": ["l1-u2-1", "l1-u2-2"],
+          "checkpoint": { "passScore": 80 }
+        },
+        {
+          "unit": "1.3",
+          "title": "Contexto y razonamiento",
+          "lessons": ["l1-u3-1"],
+          "checkpoint": { "passScore": 80 }
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "title": "Intermedio — Claude Code en acción",
+      "units": [
+        { "unit": "2.1", "title": "¿Qué es Claude Code?", "lessons": ["l2-u1-1"], "checkpoint": { "passScore": 80 } },
+        { "unit": "2.2", "title": "Instalación y primer arranque", "lessons": ["l2-u2-1"], "checkpoint": { "passScore": 80 } },
+        { "unit": "2.3", "title": "El bucle agéntico", "lessons": ["l2-u3-1"], "checkpoint": { "passScore": 80 } },
+        { "unit": "2.4", "title": "Herramientas integradas", "lessons": ["l2-u4-1"], "checkpoint": { "passScore": 80 } },
+        { "unit": "2.5", "title": "CLAUDE.md y memoria del proyecto", "lessons": ["l2-u5-1"], "checkpoint": { "passScore": 80 } },
+        { "unit": "2.6", "title": "Slash commands", "lessons": ["l2-u6-1"], "checkpoint": { "passScore": 80 } },
+        { "unit": "2.7", "title": "Permisos y seguridad", "lessons": ["l2-u7-1"], "checkpoint": { "passScore": 80 } },
+        { "unit": "2.8", "title": "Plan mode y verificación", "lessons": ["l2-u8-1"], "checkpoint": { "passScore": 80 } }
+      ]
+    },
+    {
+      "level": 3,
+      "title": "Avanzado — Ecosistemas con Claude Code",
+      "units": [
+        { "unit": "3.1", "title": "MCP (Model Context Protocol)", "lessons": ["l3-u1-1"], "checkpoint": { "passScore": 80 } },
+        { "unit": "3.2", "title": "Skills", "lessons": ["l3-u2-1"], "checkpoint": { "passScore": 80 } },
+        { "unit": "3.3", "title": "Tools personalizadas", "lessons": ["l3-u3-1"], "checkpoint": { "passScore": 80 } },
+        { "unit": "3.4", "title": "Subagentes", "lessons": ["l3-u4-1"], "checkpoint": { "passScore": 80 } },
+        { "unit": "3.5", "title": "Hooks", "lessons": ["l3-u5-1"], "checkpoint": { "passScore": 80 } },
+        { "unit": "3.6", "title": "Conectores y ecosistema", "lessons": ["l3-u6-1"], "checkpoint": { "passScore": 80 } },
+        { "unit": "3.7", "title": "Proyecto final", "lessons": ["l3-u7-1"], "checkpoint": { "passScore": 80 } }
+      ]
+    }
+  ]
+}

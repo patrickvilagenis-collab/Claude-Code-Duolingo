@@ -1,0 +1,29 @@
+{
+  "id": "l2-u6-1",
+  "level": 2,
+  "unit": "2.6",
+  "title": "Slash commands",
+  "estMinutes": 6,
+  "xp": 25,
+  "concept": {
+    "md": "Los **slash commands** son atajos que empiezan por `/`. Hay integrados como `/init` (crear `CLAUDE.md`) o `/review` (revisar cambios), y puedes crear los **tuyos** para tareas repetidas de tu proyecto.\n\nUn comando personalizado es un archivo Markdown con instrucciones que se guarda en la carpeta de comandos del proyecto."
+  },
+  "example": {
+    "md": "Crear `/test` que ejecute la suite: guardas un archivo `test.md` en `.claude/commands/` con la instrucción de correr los tests y resumir los fallos."
+  },
+  "challenge": {
+    "type": "single-choice",
+    "prompt": "¿Para qué sirven los slash commands personalizados?",
+    "options": [
+      "Reutilizar instrucciones frecuentes con un atajo `/`",
+      "Cambiar el color de la terminal",
+      "Desinstalar Claude Code"
+    ],
+    "answer": 0,
+    "why": "Encapsulan instrucciones que repites a menudo (por ejemplo, ejecutar tests y resumir) en un atajo reutilizable que invocas con `/`."
+  },
+  "commonMistakes": [
+    { "pick": 1, "why": "No tienen que ver con la apariencia de la terminal." },
+    { "pick": 2, "why": "Sirven para automatizar tareas, no para desinstalar nada." }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "l2-u8-1",
+  "level": 2,
+  "unit": "2.8",
+  "title": "Plan mode y verificación",
+  "estMinutes": 7,
+  "xp": 25,
+  "concept": {
+    "md": "Para cambios grandes o ambiguos conviene **planificar antes de actuar**. El *Plan Mode* hace que Claude proponga un plan que tú apruebas antes de tocar el código.\n\nY tras implementar, la **verificación** es clave: ejecutar los tests o la app para confirmar que el cambio funciona de verdad, no solo que \"parece\" correcto."
+  },
+  "example": {
+    "md": "Para «reescribir el sistema de login», pedir primero un plan evita ir a ciegas. Para un cambio de una línea, planificar sería excesivo."
+  },
+  "challenge": {
+    "type": "single-choice",
+    "prompt": "¿Cuándo aporta más usar Plan Mode?",
+    "options": [
+      "Para un cambio grande o poco definido",
+      "Para corregir una errata de una palabra",
+      "Nunca, siempre ralentiza"
+    ],
+    "answer": 0,
+    "why": "Planificar primero brilla en tareas **grandes o ambiguas**, donde acordar el enfoque evita retrabajo. Para una errata trivial es innecesario."
+  },
+  "commonMistakes": [
+    { "pick": 1, "why": "Para un cambio mínimo, planificar añade fricción sin beneficio." },
+    { "pick": 2, "why": "No siempre ralentiza: en cambios complejos ahorra tiempo al evitar ir por el camino equivocado." }
+  ]
+}

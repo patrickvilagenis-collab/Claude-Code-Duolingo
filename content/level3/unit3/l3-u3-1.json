@@ -1,0 +1,30 @@
+{
+  "id": "l3-u3-1",
+  "level": 3,
+  "unit": "3.3",
+  "title": "Tools personalizadas",
+  "estMinutes": 8,
+  "xp": 35,
+  "concept": {
+    "md": "Una **tool** (herramienta) personalizada le da a Claude una capacidad nueva con un contrato claro: un **nombre**, una **descripción** y un **`input_schema`** (esquema JSON de los parámetros que recibe).\n\nClaude decide cuándo llamarla y con qué argumentos; tu código (o el servidor) la ejecuta y devuelve el resultado."
+  },
+  "example": {
+    "md": "Definición de una tool con su input_schema:",
+    "code": { "lang": "json", "body": "{\n  \"name\": \"get_weather\",\n  \"description\": \"Consulta el clima de una ciudad\",\n  \"input_schema\": {\n    \"type\": \"object\",\n    \"properties\": { \"city\": { \"type\": \"string\" } },\n    \"required\": [\"city\"]\n  }\n}" }
+  },
+  "challenge": {
+    "type": "single-choice",
+    "prompt": "¿Qué describe el `input_schema` de una tool?",
+    "options": [
+      "La estructura de los parámetros que recibe la herramienta",
+      "El color del botón en la interfaz",
+      "La velocidad del modelo"
+    ],
+    "answer": 0,
+    "why": "El **input_schema** define, en JSON Schema, qué argumentos acepta la tool y cuáles son obligatorios. Es el contrato que Claude usa para llamarla correctamente."
+  },
+  "commonMistakes": [
+    { "pick": 1, "why": "Las tools son lógica, no estilo visual." },
+    { "pick": 2, "why": "El esquema describe los parámetros, no afecta a la velocidad del modelo." }
+  ]
+}

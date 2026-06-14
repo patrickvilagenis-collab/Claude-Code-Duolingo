@@ -1,0 +1,20 @@
+{
+  "id": "l3-u2-1",
+  "level": 3,
+  "unit": "3.2",
+  "title": "Skills",
+  "estMinutes": 9,
+  "xp": 35,
+  "concept": {
+    "md": "Una **Skill** empaqueta conocimiento o un procedimiento reutilizable para Claude. Es una **carpeta** con un archivo **`SKILL.md`** que describe qué hace la skill y cuándo usarla.\n\nUsan **divulgación progresiva**: Claude lee primero un resumen breve y solo carga los detalles cuando la skill es relevante. Así no malgasta contexto."
+  },
+  "example": {
+    "md": "Esqueleto de un SKILL.md:",
+    "code": { "lang": "markdown", "body": "---\nname: generar-changelog\ndescription: Crea un changelog a partir de los commits desde el último tag.\n---\n\n# Generar changelog\nPasos: 1) listar commits desde el último tag 2) agrupar por tipo 3) redactar en Markdown." }
+  },
+  "challenge": {
+    "type": "free-text",
+    "prompt": "Escribe el contenido de un SKILL.md para una skill que genere un changelog. Incluye el nombre, una descripción de cuándo usarla y los pasos.",
+    "why": "Un buen SKILL.md tiene: **name** y **description** (cuándo activarla, clave para la divulgación progresiva) y un cuerpo con los **pasos** concretos. La descripción debe dejar claro el disparador («cuando el usuario pida un changelog»)."
+  }
+}

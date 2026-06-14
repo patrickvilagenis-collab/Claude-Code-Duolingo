@@ -1,0 +1,26 @@
+{
+  "id": "l1-u2-1",
+  "level": 1,
+  "unit": "1.2",
+  "title": "Claude en la práctica: resumir, extraer, clasificar",
+  "estMinutes": 7,
+  "xp": 20,
+  "concept": {
+    "md": "Claude resuelve muchas tareas de texto con solo pedírselo bien:\n\n- **Resumir**: condensar un texto largo.\n- **Extraer**: sacar datos concretos (fechas, nombres, importes).\n- **Clasificar**: etiquetar (positivo/negativo, spam/no spam).\n- **Traducir** y **reescribir** con otro tono.\n\nLa clave es decir *qué* tarea quieres y *en qué formato* esperas la salida."
+  },
+  "example": {
+    "md": "Para extraer datos, pide explícitamente el formato (por ejemplo, JSON):",
+    "code": { "lang": "text", "body": "Extrae del texto el nombre del cliente y la fecha de entrega.\nDevuélvelo como JSON: { \"cliente\": \"\", \"fecha\": \"\" }\n\nTexto: 'Hola, soy Marta López; necesito el pedido para el 12 de marzo.'" }
+  },
+  "challenge": {
+    "type": "single-choice",
+    "prompt": "Tienes 5.000 tickets de soporte y quieres etiquetarlos por tema. ¿Qué tarea de Claude usarías?",
+    "options": ["Traducir", "Clasificar", "Reescribir"],
+    "answer": 1,
+    "why": "Etiquetar por tema es exactamente una tarea de **clasificación**: asignar cada texto a una categoría. Traducir cambia el idioma y reescribir cambia el tono; ninguna agrupa por tema."
+  },
+  "commonMistakes": [
+    { "pick": 0, "why": "Traducir cambia el idioma, no agrupa los tickets por tema." },
+    { "pick": 2, "why": "Reescribir cambia el estilo o tono, pero no asigna categorías." }
+  ]
+}

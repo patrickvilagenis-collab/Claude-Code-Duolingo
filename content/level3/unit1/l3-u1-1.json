@@ -1,0 +1,30 @@
+{
+  "id": "l3-u1-1",
+  "level": 3,
+  "unit": "3.1",
+  "title": "MCP (Model Context Protocol)",
+  "estMinutes": 9,
+  "xp": 35,
+  "concept": {
+    "md": "**MCP** (Model Context Protocol) es un estándar para conectar Claude con **herramientas y fuentes de datos externas** mediante *servidores MCP*: GitHub, Google Drive, Slack, bases de datos, etc.\n\nConfiguras un servidor MCP declarándolo (normalmente en JSON), y a partir de ahí Claude puede usar sus capacidades como si fueran herramientas más."
+  },
+  "example": {
+    "md": "Declaración típica de un servidor MCP:",
+    "code": { "lang": "json", "body": "{\n  \"mcpServers\": {\n    \"github\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@modelcontextprotocol/server-github\"]\n    }\n  }\n}" }
+  },
+  "challenge": {
+    "type": "single-choice",
+    "prompt": "¿Qué permite MCP?",
+    "options": [
+      "Conectar Claude con herramientas y datos externos de forma estándar",
+      "Acelerar el procesador del ordenador",
+      "Cambiar el modelo a uno más barato"
+    ],
+    "answer": 0,
+    "why": "MCP es el **protocolo estándar** para que Claude acceda a herramientas y fuentes externas (GitHub, Drive, Slack…) a través de servidores MCP."
+  },
+  "commonMistakes": [
+    { "pick": 1, "why": "MCP no tiene que ver con el rendimiento del hardware." },
+    { "pick": 2, "why": "Elegir el modelo es otra cosa; MCP conecta capacidades externas." }
+  ]
+}

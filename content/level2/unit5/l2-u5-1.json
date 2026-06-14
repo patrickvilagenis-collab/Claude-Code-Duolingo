@@ -1,0 +1,20 @@
+{
+  "id": "l2-u5-1",
+  "level": 2,
+  "unit": "2.5",
+  "title": "CLAUDE.md y la memoria del proyecto",
+  "estMinutes": 9,
+  "xp": 30,
+  "concept": {
+    "md": "Un archivo **`CLAUDE.md`** en la raíz del proyecto le da a Claude Code contexto persistente: cómo se construye el proyecto, cómo se ejecutan los tests, convenciones de estilo, etc. Así no tienes que repetirlo cada vez.\n\nPuedes generarlo con el comando **`/init`**, que explora el repo y propone un primer `CLAUDE.md`."
+  },
+  "example": {
+    "md": "Un CLAUDE.md mínimo:",
+    "code": { "lang": "markdown", "body": "# Proyecto\nApp de tareas en Node.\n\n## Comandos\n- Instalar: `npm install`\n- Tests: `npm test`\n\n## Convenciones\n- Comillas simples, sin punto y coma." }
+  },
+  "challenge": {
+    "type": "free-text",
+    "prompt": "Escribe un CLAUDE.md mínimo para un proyecto: incluye al menos cómo se instalan las dependencias y cómo se ejecutan los tests.",
+    "why": "Un buen CLAUDE.md mínimo incluye: una línea sobre **qué es** el proyecto, una sección de **comandos** (instalar y testear) y, si aplica, **convenciones** de estilo. Lo esencial es que Claude pueda construir y probar sin preguntártelo."
+  }
+}

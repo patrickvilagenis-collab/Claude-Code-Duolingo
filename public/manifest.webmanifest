@@ -1,0 +1,10 @@
+{
+  "name": "Claude Code Duolingo",
+  "short_name": "CC Duolingo",
+  "description": "Aprende Claude y Claude Code jugando",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6b46c1",
+  "icons": []
+}

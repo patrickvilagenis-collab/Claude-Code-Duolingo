@@ -1,0 +1,21 @@
+{
+  "id": "l2-u3-1",
+  "level": 2,
+  "unit": "2.3",
+  "title": "El bucle agéntico",
+  "estMinutes": 8,
+  "xp": 30,
+  "concept": {
+    "md": "Claude Code resuelve tareas con un **bucle agéntico**: no adivina de una sola vez, sino que observa y corrige.\n\nEl ciclo típico es:\n\n1. **Lee** los archivos relevantes para entender el contexto.\n2. **Edita** el código para aplicar el cambio.\n3. **Ejecuta** (tests o comandos) para comprobar.\n4. **Itera**: si algo falla, vuelve a leer y ajustar.\n\nEste lazo es lo que le permite arreglar bugs de forma fiable."
+  },
+  "example": {
+    "md": "Le pides «arregla el test que falla». Claude lee el test, edita el código, ejecuta la suite, ve un error nuevo, ajusta y vuelve a ejecutar hasta que pasa."
+  },
+  "challenge": {
+    "type": "order",
+    "prompt": "Ordena los pasos del bucle agéntico para arreglar un bug.",
+    "items": ["Leer los archivos relevantes", "Editar el código", "Ejecutar los tests", "Iterar si algo falla"],
+    "answer": [0, 1, 2, 3],
+    "why": "Primero **leer** para entender, luego **editar**, después **ejecutar** para verificar y, si hace falta, **iterar**. Verificar antes de editar no tendría sentido, y editar sin leer lleva a errores."
+  }
+}

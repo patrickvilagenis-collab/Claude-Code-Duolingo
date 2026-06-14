@@ -1,0 +1,29 @@
+{
+  "id": "l3-u5-1",
+  "level": 3,
+  "unit": "3.5",
+  "title": "Hooks",
+  "estMinutes": 8,
+  "xp": 35,
+  "concept": {
+    "md": "Un **hook** automatiza una acción cuando ocurre un **evento** de Claude Code (por ejemplo, al iniciar sesión: `SessionStart`, o antes/después de usar una herramienta). Se configuran en `settings.json`.\n\nLos ejecuta el *harness* (el entorno de Claude Code), no el modelo: por eso sirven para garantizar que algo pase **siempre**, como preparar el entorno o lanzar un linter."
+  },
+  "example": {
+    "md": "Un hook SessionStart que instala dependencias asegura que cada sesión nueva ya tenga el proyecto listo para ejecutar tests."
+  },
+  "challenge": {
+    "type": "single-choice",
+    "prompt": "Quieres que CADA sesión nueva prepare el entorno automáticamente. ¿Qué usarías?",
+    "options": [
+      "Un hook en el evento SessionStart",
+      "Un slash command que recuerdes ejecutar a mano",
+      "Cambiar de modelo"
+    ],
+    "answer": 0,
+    "why": "Un **hook** en `SessionStart` lo ejecuta el harness automáticamente en cada sesión: garantiza que el entorno se prepare **siempre**, sin depender de que te acuerdes."
+  },
+  "commonMistakes": [
+    { "pick": 1, "why": "Un comando manual depende de tu memoria; no garantiza que ocurra siempre." },
+    { "pick": 2, "why": "El modelo no automatiza eventos del entorno; eso son los hooks." }
+  ]
+}
