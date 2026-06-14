@@ -1,0 +1,29 @@
+{
+  "id": "l2-u7-1",
+  "level": 2,
+  "unit": "2.7",
+  "title": "Permisos y seguridad",
+  "estMinutes": 8,
+  "xp": 30,
+  "concept": {
+    "md": "Claude Code pide **permiso** antes de acciones sensibles (ejecutar comandos, editar archivos) según el modo de permisos configurado. Buenas prácticas:\n\n- **Revisa** lo que va a ejecutar antes de aprobar.\n- Trabaja en una **rama**, no directamente en `main`.\n- Desconfía de comandos **destructivos** (borrar, sobrescribir) o que envían datos fuera.\n- Aprueba con más confianza acciones **reversibles** y de bajo impacto (leer, listar)."
+  },
+  "example": {
+    "md": "Aprobar `ls` o leer un archivo es seguro. Aprobar `rm -rf` sobre una carpeta importante requiere mucha más cautela."
+  },
+  "challenge": {
+    "type": "multi-choice",
+    "prompt": "¿Cuáles son buenas prácticas de seguridad? (elige todas las correctas)",
+    "options": [
+      "Revisar el comando antes de aprobarlo",
+      "Trabajar en una rama en vez de en main",
+      "Aprobar siempre todo sin mirar",
+      "Tener cuidado con comandos destructivos"
+    ],
+    "answer": [0, 1, 3],
+    "why": "Revisar antes de aprobar, trabajar en ramas y vigilar comandos destructivos protegen tu proyecto. Aprobar todo a ciegas es justo lo contrario de una buena práctica."
+  },
+  "commonMistakes": [
+    { "pick": 2, "why": "Aprobar sin revisar es peligroso: podrías permitir una acción destructiva sin querer." }
+  ]
+}

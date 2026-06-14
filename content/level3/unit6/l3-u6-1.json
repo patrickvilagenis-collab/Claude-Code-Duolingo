@@ -1,0 +1,21 @@
+{
+  "id": "l3-u6-1",
+  "level": 3,
+  "unit": "3.6",
+  "title": "Conectores y ecosistema: PR → review → deploy",
+  "estMinutes": 9,
+  "xp": 40,
+  "concept": {
+    "md": "Juntando las piezas se construye un **flujo end-to-end**. Un ejemplo con el conector de **GitHub (MCP)** y **GitHub Actions**:\n\n1. Trabajas en una **rama** y abres un **Pull Request**.\n2. Se hace una **review** (puedes apoyarte en `/review` o en un subagente revisor).\n3. **CI** valida y construye en Actions.\n4. Al fusionar a `main`, el **deploy** automático publica los cambios.\n\nAsí, código, revisión y despliegue quedan encadenados y automatizados."
+  },
+  "example": {
+    "md": "Esta misma plataforma usa ese flujo: PR con el contenido nuevo, CI valida el JSON de las lecciones, y al fusionar se despliega a GitHub Pages."
+  },
+  "challenge": {
+    "type": "order",
+    "prompt": "Ordena un flujo típico de entrega continua.",
+    "items": ["Abrir un Pull Request desde una rama", "Revisar los cambios (review)", "CI valida y construye", "Fusionar a main y desplegar"],
+    "answer": [0, 1, 2, 3],
+    "why": "Primero se **abre el PR**, luego se **revisa**, después **CI** valida/construye y, por último, al **fusionar** se **despliega**. Desplegar antes de revisar o validar rompería la red de seguridad del flujo."
+  }
+}

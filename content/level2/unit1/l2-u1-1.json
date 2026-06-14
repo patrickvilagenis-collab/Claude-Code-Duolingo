@@ -1,0 +1,29 @@
+{
+  "id": "l2-u1-1",
+  "level": 2,
+  "unit": "2.1",
+  "title": "¿Qué es Claude Code?",
+  "estMinutes": 7,
+  "xp": 25,
+  "concept": {
+    "md": "**Claude Code** es Claude trabajando como un *agente* dentro de tu proyecto: lee archivos, los edita, ejecuta comandos y itera hasta resolver la tarea.\n\nEstá disponible en varias superficies:\n\n- **Terminal (CLI)**: el comando `claude`.\n- **App de escritorio** (Mac/Windows) y **web** (claude.ai/code).\n- **Extensiones de IDE**: VS Code y JetBrains.\n\nLa idea clave: no solo responde, *actúa* sobre tu código."
+  },
+  "example": {
+    "md": "En una terminal, dentro de un repo, escribes `claude` y le pides: «explícame qué hace este proyecto». Claude lee los archivos y te resume el código."
+  },
+  "challenge": {
+    "type": "single-choice",
+    "prompt": "¿Qué diferencia mejor a Claude Code de un chat normal con Claude?",
+    "options": [
+      "Solo responde preguntas de texto",
+      "Puede leer, editar y ejecutar código en tu proyecto",
+      "Funciona únicamente en el navegador"
+    ],
+    "answer": 1,
+    "why": "Claude Code es **agéntico**: además de conversar, actúa sobre tu proyecto (lee, edita, ejecuta, verifica). Y está en CLI, escritorio, web e IDE, no solo en el navegador."
+  },
+  "commonMistakes": [
+    { "pick": 0, "why": "Eso describe un chat de texto; Claude Code además ejecuta acciones sobre el código." },
+    { "pick": 2, "why": "También hay CLI, app de escritorio y extensiones de IDE, no solo web." }
+  ]
+}

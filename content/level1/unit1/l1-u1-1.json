@@ -1,0 +1,26 @@
+{
+  "id": "l1-u1-1",
+  "level": 1,
+  "unit": "1.1",
+  "title": "¿Qué es un LLM y qué es Claude?",
+  "estMinutes": 7,
+  "xp": 20,
+  "concept": {
+    "md": "**Claude** es un asistente de IA de Anthropic. Un *LLM* (modelo de lenguaje grande) predice texto a partir de instrucciones. Claude entiende lenguaje natural, razona y puede usar herramientas. Hay varios modelos según la tarea: **Opus** (máxima capacidad), **Sonnet** (equilibrio), **Haiku** (rápido y económico)."
+  },
+  "example": {
+    "md": "Para clasificar 10.000 reseñas de forma rápida y barata, elegirías un modelo pequeño y veloz en lugar del más potente.",
+    "code": { "lang": "text", "body": "Prompt:\nClasifica esta reseña como positiva, negativa o neutra.\nReseña: 'El producto llegó tarde pero funciona bien.'" }
+  },
+  "challenge": {
+    "type": "single-choice",
+    "prompt": "¿Qué modelo elegirías para clasificar 10.000 reseñas, barato y rápido?",
+    "options": ["Claude Opus (máxima capacidad)", "Claude Haiku (rápido y económico)", "Claude Fable (el más potente)"],
+    "answer": 1,
+    "why": "Haiku es el más rápido y económico; ideal para tareas simples de alto volumen. Opus o Fable son más capaces pero más caros y lentos para esta tarea."
+  },
+  "commonMistakes": [
+    { "pick": 0, "why": "Opus es muy capaz pero excede lo necesario para clasificar y cuesta más por token." },
+    { "pick": 2, "why": "El modelo más potente es ideal para tareas difíciles, no para clasificación masiva simple." }
+  ]
+}

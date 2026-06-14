@@ -1,0 +1,21 @@
+{
+  "id": "l1-u2-2",
+  "level": 1,
+  "unit": "1.2",
+  "title": "El formato de salida importa",
+  "estMinutes": 6,
+  "xp": 20,
+  "concept": {
+    "md": "Si necesitas que la respuesta tenga una **estructura concreta** (una lista, una tabla, JSON), pídela explícitamente. Claude sigue el formato que indiques.\n\nEjemplos de instrucción de formato: *«responde solo con sí o no»*, *«en 3 viñetas»*, *«como JSON con las claves nombre y total»*."
+  },
+  "example": {
+    "md": "Comparar una instrucción sin y con formato:",
+    "code": { "lang": "text", "body": "Sin formato: 'dame las ideas del texto'\nCon formato: 'lista las 3 ideas principales como viñetas, máx. 10 palabras cada una'" }
+  },
+  "challenge": {
+    "type": "fill-blank",
+    "prompt": "Completa: para obtener datos que tu programa pueda leer fácilmente, pides la salida en formato ____ (un formato de datos muy común en programación).",
+    "answer": ["json", "JSON"],
+    "why": "**JSON** es un formato estructurado que el código puede parsear directamente. Por eso, cuando una respuesta alimenta a otro programa, se pide en JSON."
+  }
+}

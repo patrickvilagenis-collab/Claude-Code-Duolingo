@@ -1,0 +1,29 @@
+{
+  "id": "l3-u4-1",
+  "level": 3,
+  "unit": "3.4",
+  "title": "Subagentes",
+  "estMinutes": 8,
+  "xp": 35,
+  "concept": {
+    "md": "Un **subagente** es una instancia de Claude a la que delegas una sub-tarea con su propio contexto. Sirven para:\n\n- **Trabajo en paralelo**: lanzar varias búsquedas o tareas a la vez.\n- **Especialización**: un agente enfocado (p. ej. revisar seguridad) con sus propias instrucciones.\n- **Ahorrar contexto**: el subagente devuelve solo la conclusión, no todo el ruido intermedio."
+  },
+  "example": {
+    "md": "Para «busca en todo el repo dónde se valida el email y resume», delegar en un subagente de búsqueda devuelve solo el hallazgo, sin llenar tu conversación con cada archivo leído."
+  },
+  "challenge": {
+    "type": "single-choice",
+    "prompt": "¿Cuándo conviene lanzar un subagente?",
+    "options": [
+      "Para una búsqueda amplia cuyo detalle no necesitas conservar",
+      "Para escribir una sola línea de código",
+      "Nunca, siempre es peor"
+    ],
+    "answer": 0,
+    "why": "Los subagentes brillan en tareas amplias o paralelizables (búsquedas, exploración) donde solo te interesa la **conclusión**. Para un cambio trivial, el coste de delegar no compensa."
+  },
+  "commonMistakes": [
+    { "pick": 1, "why": "Para algo mínimo, delegar añade sobrecarga sin beneficio." },
+    { "pick": 2, "why": "Bien usados, ahorran contexto y permiten paralelizar; no son peores por definición." }
+  ]
+}

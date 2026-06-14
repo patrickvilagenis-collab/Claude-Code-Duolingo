@@ -1,0 +1,25 @@
+{
+  "id": "l2-u4-1",
+  "level": 2,
+  "unit": "2.4",
+  "title": "Herramientas integradas",
+  "estMinutes": 7,
+  "xp": 25,
+  "concept": {
+    "md": "Claude Code usa **herramientas** para actuar. Las más habituales:\n\n- **Read**: leer un archivo.\n- **Edit / Write**: modificar o crear archivos.\n- **Bash**: ejecutar comandos de terminal.\n- **Glob**: buscar archivos por patrón (p. ej. `**/*.js`).\n- **Grep**: buscar texto dentro de los archivos.\n- **Web search**: buscar información en la web.\n\nElegir la herramienta adecuada hace el trabajo más rápido y preciso."
+  },
+  "example": {
+    "md": "Para encontrar en qué archivo se define una función, lo eficiente es buscar el texto dentro del código, no abrir archivos al azar."
+  },
+  "challenge": {
+    "type": "single-choice",
+    "prompt": "Quieres encontrar en qué archivo aparece la palabra `calcularTotal`. ¿Qué herramienta encaja mejor?",
+    "options": ["Bash para reiniciar el proyecto", "Grep para buscar el texto en el código", "Web search en internet"],
+    "answer": 1,
+    "why": "**Grep** busca texto dentro de los archivos del proyecto: ideal para localizar dónde se usa o define un símbolo. La web no conoce tu código privado."
+  },
+  "commonMistakes": [
+    { "pick": 0, "why": "Reiniciar no te dice dónde está el texto en el código." },
+    { "pick": 2, "why": "La web no tiene acceso a tu repositorio; necesitas buscar localmente." }
+  ]
+}

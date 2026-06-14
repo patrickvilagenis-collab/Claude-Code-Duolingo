@@ -1,0 +1,30 @@
+{
+  "id": "l1-u1-2",
+  "level": 1,
+  "unit": "1.1",
+  "title": "Anatomía de un buen prompt",
+  "estMinutes": 6,
+  "xp": 20,
+  "concept": {
+    "md": "Un buen prompt suele tener: **contexto** (situación), **instrucción** (qué quieres), **formato de salida** (cómo lo quieres) y, si ayuda, **ejemplos**. Cuanto más claro, mejor el resultado."
+  },
+  "example": {
+    "md": "Prompt vago: 'háblame de este correo'. Prompt claro: 'Resume este correo en 3 viñetas y dime si requiere respuesta urgente.'",
+    "code": { "lang": "text", "body": "Resume este correo en 3 viñetas.\nIndica al final si requiere respuesta urgente (sí/no)." }
+  },
+  "challenge": {
+    "type": "single-choice",
+    "prompt": "¿Cuál es el prompt MÁS claro?",
+    "options": [
+      "Háblame de esto",
+      "Resume este texto en 3 viñetas y lista las fechas mencionadas",
+      "Hazlo bien"
+    ],
+    "answer": 1,
+    "why": "Especifica instrucción (resumir), formato (3 viñetas) y un extra concreto (fechas). Las otras opciones son ambiguas y dejan a Claude adivinar qué quieres."
+  },
+  "commonMistakes": [
+    { "pick": 0, "why": "No dice qué hacer ni en qué formato: el resultado será impredecible." },
+    { "pick": 2, "why": "'Bien' es subjetivo; el modelo no sabe contra qué criterio medir." }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "l2-u2-1",
+  "level": 2,
+  "unit": "2.2",
+  "title": "Instalación y primer arranque",
+  "estMinutes": 8,
+  "xp": 25,
+  "concept": {
+    "md": "Para empezar con Claude Code en tu máquina:\n\n1. **Instálalo** siguiendo la guía oficial.\n2. Abre una terminal **dentro de la carpeta de tu proyecto** (tu repo).\n3. Ejecuta `claude`.\n4. **Autentícate** con tu cuenta la primera vez.\n5. Escribe tu primer prompt, por ejemplo: «resume qué hace este repositorio»."
+  },
+  "example": {
+    "md": "Primer arranque típico:",
+    "code": { "lang": "bash", "body": "cd mi-proyecto\nclaude\n> Resume qué hace este repositorio y cómo se ejecutan los tests" }
+  },
+  "challenge": {
+    "type": "single-choice",
+    "prompt": "Antes de ejecutar `claude` por primera vez en un proyecto, ¿dónde conviene estar?",
+    "options": [
+      "En la carpeta raíz del proyecto (el repo)",
+      "En la carpeta de Descargas",
+      "Da igual la carpeta"
+    ],
+    "answer": 0,
+    "why": "Claude Code trabaja sobre el directorio actual. Si lo abres **dentro del repo**, tiene acceso a los archivos del proyecto y puede ayudarte con ellos."
+  },
+  "commonMistakes": [
+    { "pick": 1, "why": "Descargas no contiene tu proyecto; Claude no vería tu código." },
+    { "pick": 2, "why": "Sí importa: el directorio actual define qué archivos puede leer y editar." }
+  ]
+}

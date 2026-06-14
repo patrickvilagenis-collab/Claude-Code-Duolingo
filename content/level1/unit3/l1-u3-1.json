@@ -1,0 +1,29 @@
+{
+  "id": "l1-u3-1",
+  "level": 1,
+  "unit": "1.3",
+  "title": "Contexto, memoria y razonamiento",
+  "estMinutes": 8,
+  "xp": 25,
+  "concept": {
+    "md": "Claude tiene una **ventana de contexto**: la cantidad de texto (tu conversación + documentos) que puede tener \"en mente\" a la vez. Si la conversación se hace muy larga, lo más antiguo puede quedar fuera y parecerá que \"olvidó\" algo.\n\nAdemás, para problemas difíciles puedes pedirle que **razone paso a paso** (más esfuerzo de razonamiento). Para tareas simples, no hace falta: gastarías tiempo y coste sin mejora."
+  },
+  "example": {
+    "md": "Si tras muchos mensajes Claude ignora un dato del principio, suele ser porque salió de la ventana de contexto. La solución: recordárselo o resumir lo importante."
+  },
+  "challenge": {
+    "type": "single-choice",
+    "prompt": "Claude \"olvidó\" un dato que mencionaste hace 40 mensajes en una conversación muy larga. ¿Cuál es la causa más probable?",
+    "options": [
+      "Claude se equivocó al azar",
+      "El dato quedó fuera de la ventana de contexto",
+      "Hay que reiniciar el ordenador"
+    ],
+    "answer": 1,
+    "why": "En conversaciones muy largas, el contenido más antiguo puede salir de la **ventana de contexto** y dejar de estar disponible. Recordárselo o resumir lo clave lo resuelve."
+  },
+  "commonMistakes": [
+    { "pick": 0, "why": "No es azar: hay una causa concreta y predecible relacionada con el contexto." },
+    { "pick": 2, "why": "Nada que ver con el hardware; es cómo funciona la memoria de la conversación." }
+  ]
+}
